@@ -26,9 +26,11 @@ public class Solution {
     }
 
     public static int max(int[] array) {
+        int s = 0;
         for (int i = 0; i < array.length; i++) {
-
+            if (array[i] > s)
+                s = array[i];
         }// найди максимальное значение
-        return 0;
+        return s;
     }
 }
