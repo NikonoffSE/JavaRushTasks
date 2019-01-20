@@ -15,7 +15,13 @@ public class Solution {
         for (int i = 0; i < 10; i++) {
             list.add(bu.readLine());
         }
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            if(list.get(i).length()+1 != list.get(i+1).length()){
+                System.out.println(i + 2);
+                break;
+            }
+            else {}
+              // System.out.println("ok");
 
         }
         //напишите тут ваш код

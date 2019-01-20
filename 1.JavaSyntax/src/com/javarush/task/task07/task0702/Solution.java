@@ -2,6 +2,8 @@ package com.javarush.task.task07.task0702;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 /* 
 Массив из строчек в обратном порядке
@@ -23,6 +25,8 @@ public class Solution {
             //System.out.println(arr.length-1);
             System.out.println(arr[arr.length-1-i]);
         }
-        //напишите тут ваш код
+
+        //String[] ar = Arrays.copyOf(arr, 2);//напишите тут ваш код
+        //System.out.println(Arrays.toString(ar));
     }
 }
