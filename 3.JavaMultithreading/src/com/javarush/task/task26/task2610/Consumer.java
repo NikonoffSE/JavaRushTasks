@@ -1,0 +1,26 @@
+package com.javarush.task.task26.task2610;
+
+import java.util.concurrent.BlockingQueue;
+
+public class Consumer implements Runnable {
+    private BlockingQueue queue;
+
+    public Consumer(BlockingQueue queue) {
+        this.queue = queue;
+    }
+
+    @Override
+    public void run() {
+
+        try {
+            while (true) {
+                System.out.println( (String) queue.take());
+                Thread.sleep(1);
+            }
+        }
+        catch (InterruptedException e) {
+
+        }
+
+    }
+}
